@@ -16,13 +16,8 @@ view: customers {
     sql: ${TABLE}.customer_type ;;
   }
 
-  measure: name_count {
+  measure: count {
     type: count
     drill_fields: [custmer_name]
-  }
-
-  measure: type_count {
-    type: count
-    drill_fields: [customer_type]
   }
 }
