@@ -50,4 +50,19 @@ view: date {
     type: count
     drill_fields: [month_name]
   }
+
+  measure: test {
+    type: number
+    description: "test"
+    sql: ((${TABLE}.year))/86.0 ;;
+    value_format: "[h] \h m\m s\s"
+    # html:{{ rendered_value | date: "%X" }};;
+  }
+
+  dimension: test_workaround {
+    #type: number
+    description: "test"
+    sql: ((${TABLE}.year))/86.0 ;;
+    #value_format: "[h] \h m\m s\s"
+    html:{{ rendered_value | date: "%X" }};;}
 }
