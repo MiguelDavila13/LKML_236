@@ -11,6 +11,7 @@ view: customers {
     sql: ${TABLE}.customer_code ;;
   }
 
+
   dimension: customer_type {
     type: string
     sql: ${TABLE}.customer_type ;;
