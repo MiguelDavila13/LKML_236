@@ -15,7 +15,7 @@ view: markets {
     type: string
     sql: ${TABLE}.zone ;;
   }
-
+#test
   measure: count {
     type: count
     drill_fields: [markets_name]
